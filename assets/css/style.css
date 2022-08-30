@@ -1,6 +1,10 @@
+/* html {
+  height: 100%;
+} */
 body {
   background-color: transparent;
   border: 0;
+  display: flex;
 }
 .header {
   border-bottom: 1px solid #e6e8e9;
@@ -37,6 +41,7 @@ body {
   color: #676768;
 }
 .intro-2 {
+  border-bottom: 1px solid #e6e8e9;
 }
 .intro-2 h1 {
   text-align: center;
@@ -45,7 +50,18 @@ body {
   font-weight: 800;
   word-spacing: 5px;
   color: #111515;
-  font-size: 11.5vw;
-  line-height: 11.5vw;
-  letter-spacing: -0.7vw;
+  font-size: 6vw;
+  line-height: 6vw;
+  letter-spacing: -0.4vw;
+}
+.intro-2 h4 {
+  text-align: center;
+  overflow: hidden;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+}
+.footer {
+  background-color: #035757;
+  border: solid;
+  margin-top: auto;
 }
