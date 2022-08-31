@@ -1,11 +1,6 @@
-html {
-  height: 100%;
-}
 body {
   background-color: transparent;
   border: 0;
-  display: flex;
-  flex-direction: column;
 }
 .header {
   border-bottom: 1px solid #e6e8e9;
@@ -13,6 +8,9 @@ body {
 }
 .menu {
   text-align: right;
+}
+.menu a {
+  text-decoration: none;
 }
 .menu-img {
   max-width: 2%;
@@ -62,7 +60,10 @@ body {
   letter-spacing: 0.15em;
 }
 .footer {
-  background-color: #035757;
-  border: solid;
-  margin-top: auto;
+  border-top: 1px solid #e6e8e9;
+  text-align: center;
+  text-transform: uppercase;
+}
+.footer a {
+  text-decoration: none;
 }
