@@ -1,4 +1,4 @@
 # alokhnathps.github.io
 
-Personal Portfolio
+Personal Github Portfolio
 https://alokhnathps.github.io/
