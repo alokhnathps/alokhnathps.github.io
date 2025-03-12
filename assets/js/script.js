@@ -15,6 +15,7 @@ async function fetchGitHubRepoData(projectName) {
       name: data.name,
       url: data.html_url,
       description: data.description || "No description available.",
+      pageLink: `https://alokhnathps.github.io/${projectName}`,
     };
   } catch (error) {
     console.error("Error fetching GitHub data:", error);
@@ -22,6 +23,7 @@ async function fetchGitHubRepoData(projectName) {
       name: projectName,
       url: `https://github.com/alokhnathps/${projectName}`,
       description: "Error fetching description.",
+      pageLink: `https://alokhnathps.github.io/${projectName}`,
     };
   }
 }
@@ -33,9 +35,10 @@ async function generateProjectList() {
 
     const listItem = document.createElement("li");
     listItem.innerHTML = `
-        <a href="${projectData.url}" target="_blank">${projectData.name}</a>
-        <p>${projectData.description}</p>
-      `;
+                <a href="${projectData.url}" target="_blank">${projectData.name}</a>
+                <p>${projectData.description}</p>
+                <a href="${projectData.pageLink}" target="_blank">-> Try Me</a>
+            `;
     projectList.appendChild(listItem);
   }
 }
