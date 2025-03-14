@@ -1,4 +1,4 @@
-const projectNames = ["charecta", "kodepot"];
+const projectNames = ["charecta", "kodepot", "seo-resources"];
 
 const projectList = document.getElementById("project-list");
 
